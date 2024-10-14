@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in Portfolio</h1>
+        <p>Social Media Marketing & Video Editing Agency</p>
+    </header>
+
+    <nav>
+        <button onclick="filterVideos('all')">All</button>
+        <button onclick="filterVideos('short')">Short-form Videos</button>
+        <button onclick="filterVideos('long')">Long-form Videos</button>
+        <button onclick="filterVideos('gaming')">Gaming Videos</button>
+        <button onclick="filterVideos('football')">Football Edits</button>
+        <button onclick="filterVideos('ecommerce')">eCommerce Ads</button>
+        <button onclick="filterVideos('documentary')">Documentary Style</button>
+        <button onclick="filterVideos('color')">Color Grading</button>
+        <button onclick="filterVideos('anime')">Anime Videos</button>
+        <button onclick="filterVideos('ads')">Ads</button>
+    </nav>
+
+    <main>
+        <div class="video-container" id="videoContainer">
+            <!-- Short-form Video Example -->
+            <div class="video-card" data-category="short">
+                <video src="short-video-example.mp4" controls></video>
+                <h3>Short-form Video Example</h3>
+            </div>
+
+            <!-- Long-form Video Example -->
+            <div class="video-card" data-category="long">
+                <video src="long-vdo-example (1).mp4" controls></video>
+                <h3>Long-form Video Example</h3>
+            </div>
+
+            <!-- Gaming Video Example -->
+            <div class="video-card" data-category="gaming">
+                <video src="gaming-vdo-example.mp4" controls></video>
+                <h3>Gaming Video Example</h3>
+            </div>
+
+            <!-- Add more video cards with different categories -->
+            <!-- Example format:
+            <div class="video-card" data-category="category_name">
+                <video src="path/to/video.mp4" controls></video>
+                <h3>Title of the Video</h3>
+            </div>
+            -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
