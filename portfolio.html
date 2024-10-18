@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="portfolio-main">
+        <h2 id="portfoliohead">Our Portfolio</h2>
+        <p id="para-portfolio">Explore our diverse range of video editing work.</p>
+
+        <div class="filter-buttons">
+            <button onclick="filterVideos('all')">All</button>
+            <button onclick="filterVideos('short')">Short Form</button>
+            <button onclick="filterVideos('long')">Long Form</button>
+            <button onclick="filterVideos('gaming')">Gaming</button>
+            <button onclick="filterVideos('football')">Football Edits</button>
+            <button onclick="filterVideos('ecommerce')">eCommerce Ads</button>
+            <button onclick="filterVideos('documentary')">Documentary Style</button>
+            <button onclick="filterVideos('color')">Color Grading</button>
+            <button onclick="filterVideos('anime')">Anime Videos</button>
+            <button onclick="filterVideos('ads')">Ads</button>
+        </div>
+
+        <div class="video-container" id="videoContainer">
+            <!-- Same video cards as previous code, categorized appropriately -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

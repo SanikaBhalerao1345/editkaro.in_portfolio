@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editkaro.in Portfolio</title>
+    <title>Editkaro.in - Home</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Editkaro.in - A leading social media marketing and video editing agency providing exceptional services for all your video needs.">
+    <meta name="keywords" content="video editing, social media marketing, short videos, long videos, gaming videos, football edits, color grading, eCommerce ads, anime videos">
+    <meta name="robots" content="index, follow">
+
 </head>
 <body>
+    
     <header>
-        <h1>Editkaro.in Portfolio</h1>
-        <p>Social Media Marketing & Video Editing Agency</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Editkaro.in</h1>
+            <p>Your partner for exceptional video editing and social media marketing.</p>
+        </div>
     </header>
-
-    <nav>
-        <button onclick="filterVideos('all')">All</button>
-        <button onclick="filterVideos('short')">Short-form Videos</button>
-        <button onclick="filterVideos('long')">Long-form Videos</button>
-        <button onclick="filterVideos('gaming')">Gaming Videos</button>
-        <button onclick="filterVideos('football')">Football Edits</button>
-        <button onclick="filterVideos('ecommerce')">eCommerce Ads</button>
-        <button onclick="filterVideos('documentary')">Documentary Style</button>
-        <button onclick="filterVideos('color')">Color Grading</button>
-        <button onclick="filterVideos('anime')">Anime Videos</button>
-        <button onclick="filterVideos('ads')">Ads</button>
-    </nav>
-
-    <main>
+    
         <div class="video-container" id="videoContainer">
             <!-- Short-form Video Example -->
             <div class="video-card" data-category="short">
                 <video src="short-video-example.mp4" controls></video>
-                <h3>Short-form Video Example</h3>
+                <h3 style="color: black;">Short-form Video Example</h3>
             </div>
 
             <!-- Long-form Video Example -->
             <div class="video-card" data-category="long">
                 <video src="long-vdo-example (1).mp4" controls></video>
-                <h3>Long-form Video Example</h3>
+                <h3 style="color: black;">Long-form Video Example</h3>
             </div>
 
             <!-- Gaming Video Example -->
             <div class="video-card" data-category="gaming">
                 <video src="gaming-vdo-example.mp4" controls></video>
-                <h3>Gaming Video Example</h3>
+                <h3 style="color: black;">Gaming Video Example</h3>
             </div>
-
-            <!-- Add more video cards with different categories -->
-            <!-- Example format:
-            <div class="video-card" data-category="category_name">
-                <video src="path/to/video.mp4" controls></video>
-                <h3>Title of the Video</h3>
-            </div>
-            -->
         </div>
-    </main>
+
+        <p>Explore more in portfolio section!!</p>
+    <section class="email-subscription">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscriptionForm">
+            <input type="email" id="subscriberEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
